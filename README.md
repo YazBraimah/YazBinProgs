@@ -1,9 +1,9 @@
-## SAPA
+### SAPA
 
 SAPA v2.0 (Sequence Alignment and PAML Analysis) aligns coding sequences, translates them into proteins, calculates pairwise Ka/Ks, and performs PAML analyses.
 
 				
-# Requirements:
+# Dependancies:
 		
 		1. In addition to the BioPerl modules required for this script to work (see code header), the following programs/scripts are required 
 		(make sure they are in your path variable):
@@ -21,43 +21,43 @@ SAPA v2.0 (Sequence Alignment and PAML Analysis) aligns coding sequences, transl
 		
  # Required arguments:
 
---CDS_file|c <string>				sequence file containing CDS from multiple species.
+		--CDS_file|c <string>				sequence file containing CDS from multiple species.
 
---gene_list|g <string>				file containing list of genes to be analyzed (one gene_id/line).
-	OR
---gene_id|i <string>				individual gene_id to be analyzed
+		--gene_list|g <string>				file containing list of genes to be analyzed (one gene_id/line).
+		OR
+		--gene_id|i <string>				individual gene_id to be analyzed
   
---output|o					name of directory for outputs 
+		--output|o					name of directory for outputs 
 
 
-  Options:
+ # Options
 
---show_samples					(optional) display species IDs in CDS_file and exit (only requires "-c <CDS_file>" argument).
+		--show_samples					(optional) display species IDs in CDS_file and exit (only requires "-c <CDS_file>" argument).
 
---include_outgroups				(must be specifies if orthologous sequecnes have different gene_id's)
+		--include_outgroups				(must be specified if orthologous sequences have different gene_id's)
 
-	--orthology_file <string>		file with orthology information. format: <transcript_id>\t<orthologue_id>
+		--orthology_file <string>		file with orthology information. format: <transcript_id>\t<orthologue_id>
 
 
---view_DNA_alignment				(optional. Requires Geneious, obviously) open DNA alignment in Geneious.
+		--view_DNA_alignment				(optional. Requires Geneious, Mac only) open DNA alignment in Geneious.
 
---view_Protein_alignment			(optional. Requires Geneious, obviously) open Protein alignment in Geneious.
+		--view_Protein_alignment			(optional. Requires Geneious, Mac only) open Protein alignment in Geneious.
 
---save_alignments				(optional) retain alignment files
+		--save_alignments				(optional) retain alignment files
 
---calculate_KaKs				Calculate pairwise Ka/Ks.
+		--calculate_KaKs				Calculate pairwise Ka/Ks.
 
---run_PAML					Perform PAML codeml analyses
+		--run_PAML					Perform PAML codeml analyses
 
-	--tree_file				(required) newick format phylogeny
+			--tree_file				(required) newick format phylogeny
 	
-	*** Running PAML will execute the default NULL, i.e. model = 0, NSsites = 0. To execute the branch model and/or the branch-site model(s), specify as follows:
+			*** Running PAML will execute the default NULL, i.e. model = 0, NSsites = 0. To execute the branch model and/or the branch-site model(s), specify as follows:
 
-	--branch	(optional)
-	--branchSite	(optional)	
-	--restrict_samples			File with species IDs to use in branch-type PAML tests. Required if --branch or --branchSite is specificied. 
+			--branch	(optional)
+			--branchSite	(optional)	
+			--restrict_samples			File with species IDs to use in branch-type PAML tests. Required if --branch or --branchSite is specificied. 
 								One ID per line. must match species ID in *.tree file and FASTA file.
 
---help						
+		--help						
 
 					
