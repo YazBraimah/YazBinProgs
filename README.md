@@ -3,7 +3,7 @@
 SAPA v1.1 (Sequence Alignment and PAML Analysis) aligns coding sequences, translates them into proteins, calculates pairwise Ka/Ks, and performs PAML analyses.
 
 				
-# Requirements:
+## Requirements:
 		
 		1. In addition to the BioPerl modules required for this script to work (see code header), the following programs/scripts are required 
 		(make sure they are in your path variable):
