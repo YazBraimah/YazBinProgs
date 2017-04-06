@@ -1,6 +1,6 @@
-### SAPA
+## SAPA
 
-SAPA v1.1 (Sequence Alignment and PAML Analysis) aligns coding sequences, translates them into proteins, calculates pairwise Ka/Ks, and performs PAML analyses.
+SAPA v2.0 (Sequence Alignment and PAML Analysis) aligns coding sequences, translates them into proteins, calculates pairwise Ka/Ks, and performs PAML analyses.
 
 				
 # Requirements:
@@ -19,7 +19,7 @@ SAPA v1.1 (Sequence Alignment and PAML Analysis) aligns coding sequences, transl
 		3. If the orthologous genes to be analyzed have different gene_id's, then must use "--include_outgroups" option and provide "orthology_file"
 
 		
- ## Required arguments:
+ # Required arguments:
 
 --CDS_file|c <string>				sequence file containing CDS from multiple species.
 
