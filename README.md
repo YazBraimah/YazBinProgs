@@ -1,9 +1,9 @@
-# SAPA
+### SAPA
 
 SAPA v2.0 (Sequence Alignment and PAML Analysis) aligns coding sequences, translates them into proteins, calculates pairwise Ka/Ks, and performs PAML analyses.
 
 				
-#Requirements:
+# Dependancies:
 		
 		1. In addition to the BioPerl modules required for this script to work (see code header), the following programs/scripts are required 
 		(make sure they are in your path variable):
@@ -19,7 +19,7 @@ SAPA v2.0 (Sequence Alignment and PAML Analysis) aligns coding sequences, transl
 		3. If the orthologous genes to be analyzed have different gene_id's, then must use "--include_outgroups" option and provide "orthology_file"
 
 		
- #Required arguments:
+ # Required arguments:
 
 		--CDS_file|c <string>				sequence file containing CDS from multiple species.
 
@@ -30,7 +30,7 @@ SAPA v2.0 (Sequence Alignment and PAML Analysis) aligns coding sequences, transl
 		--output|o					name of directory for outputs 
 
 
- #Options
+ # Options
 
 		--show_samples					(optional) display species IDs in CDS_file and exit (only requires "-c <CDS_file>" argument).
 
