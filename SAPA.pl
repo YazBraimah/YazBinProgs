@@ -30,7 +30,7 @@ my $usage = <<__EOUSAGE__;
 #     ######  ##     ## ##        ##     ## 
 #
 #
-#	SAPA v1.1 (Sequence Alignment and PAML Analysis) aligns coding sequences, translates them into proteins, calculates pairwise Ka/Ks, and performs PAML analyses.
+#	SAPA v2.0 (Sequence Alignment and PAML Analysis) aligns coding sequences, translates them into proteins, calculates pairwise Ka/Ks, and performs PAML analyses.
 #
 #					
 #	Requirements:
