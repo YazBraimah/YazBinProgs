@@ -150,6 +150,8 @@ my $help_flag = 0;
     'output|o=s' => \$output_dir,
     
     'show_samples' => \$show_samples_flag,
+    'include_samples' => \$include_samples_flag,
+    'exclude_samples' => \$exclude_samples_flag,
     'samples_file=s' => \$samples_file,
     
     'include_outgroups' => \$include_outgroups_flag,
